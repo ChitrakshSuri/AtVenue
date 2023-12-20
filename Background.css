@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+
+body {
+  background-image: linear-gradient(rgba(54, 54, 58, 0.3), rgb(45, 44, 44, 0.2)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(54, 54, 58, 0.3), rgb(45, 44, 44, 0.2)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  height: 100%;
+}
+
+.search-box {
+  display: flex;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.event-type,
+.guests,
+.location {
+  flex: 1;
+  margin: 5px;
+  /* padding: 10px; */
+  /* margin: 5px; */
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .event-type,
+  .guests,
+  .location {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: center;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1 {
+  text-align: center;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+}
+footer {
+  color: aliceblue;
+}

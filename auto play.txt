@@ -1,0 +1,6 @@
+<video autoplay loop muted aria-label="Background Video">
+        <source
+          src="https://www.harvard.edu/wp-content/uploads/2023/08/230804_memorial_hall_1.mp4"
+          type="video/mp4"
+        />
+      </video>
